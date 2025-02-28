@@ -1,0 +1,201 @@
+/* ==== RESET GENERAL ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f9f9f9, #e3e6f3);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==== ENCABEZADO Y MENÚ ==== */
+header {
+    background: #1e1e2f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* ==== SECCIONES GENERALES ==== */
+section {
+    max-width: 1000px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1e1e2f;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-top: 3px solid #ff6f61;
+    border-bottom: 3px solid #ff6f61;
+    padding: 8px 0;
+}
+
+h3 {
+    color: #333;
+    margin-top: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* ==== LISTAS Y BOTONES ==== */
+ol, ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e55b50;
+}
+
+/* ==== IMÁGENES AJUSTADAS ==== */
+section img {
+    width: 75%;
+    max-width: 525px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== FORMULARIO ==== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* ==== FOOTER ==== */
+footer {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff6f61;
+}
+
+/* ==== RESPONSIVE DESIGN ==== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section img {
+        max-width: 100%;
+    }
+}
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background: #e55b50;
+    transform: scale(1.1);
+}
